@@ -308,7 +308,7 @@ To expose the Contracts RPC API:
       
       fn get_storage(
          address: AccountId,
-         key: [u8; 32],
+         key: Vec<u8>,
          ) -> pallet_contracts_primitives::GetStorageResult {
          Contracts::get_storage(address, key)
          }
